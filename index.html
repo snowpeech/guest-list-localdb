@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guest List</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- 	<form id="new-guest" method="POST" action="#">
+      <input type="text" name="new-guest" id="new-guest" placeholder="Enter a todo item..." required>
+    </form>
+ -->
+ 	<div class="background">
+ 		<div class="textbox">
+ 			<h1> Join the Party </h1>
+		    <div>
+				First Name: <input type="text" id="FirstName" />
+			</div>
+
+			<div>
+				Last Name: <input type="text" id="LastName" />
+			</div>
+
+			<div>
+				Email: <input type="email" id="email" />
+			</div>
+
+			<div>
+				Notes: 
+				<input type="textarea" id="Notes" rows="10" cols="30" />
+					<form action="/action_page.php">
+		  				<!-- <textarea name="message" > </textarea> -->
+		  			</form>
+		  		</div>
+
+			<div>
+				<input type="button" value="Count me in!" id="btn" class="add" />
+				
+			</div>
+		</div>
+		<div class="textbox">
+			<h2>Look who's here!</h2>
+			<div id="display">
+				<!-- this is where the javascript results will show -->
+			</div>
+		</div>
+
+	</div> <!-- end background image -->
+
+	<script src="indexeddb.js"></script> <!-- this is for the add button to work -->
+	<script>
+		//wire up click event to add function
+		document.querySelector("#btn").addEventListener("click", add);
+	</script>
+
+</body>
+</html>
