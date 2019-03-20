@@ -11,19 +11,27 @@
 	background-repeat: repeat;
 	background-position: center;	 
 	text-align: center;
-	display: inline-flex;
+	display: flex;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 535px ){
+	.background {
+		display: block;
+	}
 }
 
 .textbox {
-	margin: 30px 40px;
+	margin: 20px;
 	padding: 20px;
   	background-color: rgba(63,82,99,.8);
   	color: rgb(254,244,246);
+  	line-height: 2em;
 
 }
 
 .textbox div {
-	line-height: 2em;
+	/*line-height: 2em;*/
 }
 
 .add{
